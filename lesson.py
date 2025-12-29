@@ -1,24 +1,15 @@
 import turtle
 
-raphael = turtle.Turtle()
-wn = turtle.Screen()
+t = turtle.Turtle()
+t.penup()
 
+t.color("blue")
+t.goto(-100, 20)
+t.write("Перший текст", font=("Arial", 16, "normal"))
 
-wn.title("Raphael")
-wn.bgcolor("red")
-
-
-raphael.forward(120)
-raphael.left(60)
-
-raphael.forward(80)
-raphael.left(120)
-
-raphael.forward(120)
-raphael.left(60)
-
-raphael.forward(80)
-raphael.left(120)
+t.color("red")
+t.goto(-100, -20)
+t.write("Другий текст", font=("Arial", 16, "normal"))
 
 
 
@@ -26,7 +17,5 @@ raphael.left(120)
 
 
 
-
-wn.mainloop()
 
 turtle.exitonclick()
