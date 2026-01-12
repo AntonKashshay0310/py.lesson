@@ -1,21 +1,23 @@
 import turtle
 
+
 t = turtle.Turtle()
-t.penup()
-
-t.color("blue")
-t.goto(-100, 20)
-t.write("Перший текст", font=("Arial", 16, "normal"))
-
-t.color("red")
-t.goto(-100, -20)
-t.write("Другий текст", font=("Arial", 16, "normal"))
 
 
 
+distance = int(input("Введіть відстань, яку має пройти черепашка: "))
 
 
+if distance <= 100:
+    t.speed(2)     
+elif distance <= 300:
+    t.speed(5)     
+else:
+    t.speed(10)    
 
+
+t.forward(distance)
 
 
 turtle.exitonclick()
+
