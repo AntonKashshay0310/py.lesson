@@ -1,23 +1,14 @@
 import turtle
 
-
 t = turtle.Turtle()
 
-
-
-distance = int(input("Введіть відстань, яку має пройти черепашка: "))
-
-
-if distance <= 100:
-    t.speed(2)     
-elif distance <= 300:
-    t.speed(5)     
-else:
-    t.speed(10)    
-
-
-t.forward(distance)
-
+for square in range(5):
+    for side in range(4):
+        t.forward(30)
+        t.right(90)
+    t.forward(40)
 
 turtle.exitonclick()
+
+
 
